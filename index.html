@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to DX Traders - Learn, Trade, and Grow." />
+  <title>DX Traders</title>
+  <link rel="icon" href="image/Lg.jpg" type="image/jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #0f172a, #1e293b);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero {
+      background-image: url('image/Lg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 8px #000;
+      position: relative;
+      z-index: 1;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #60a5fa, #a5b4fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      animation: fadeSlideDown 1s ease-out;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem 3rem;
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+    .hero p {
+      max-width: 700px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      animation: fadeSlideUp 1.2s ease-out;
+    }
+    .cta-btn {
+      margin-top: 2rem;
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 9999px;
+      transition: all 0.3s ease-in-out;
+      animation: fadeIn 1.5s ease-out;
+    }
+    .cta-btn:hover {
+      background-color: #1d4ed8;
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #1e293b;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover svg {
+      fill: #3b82f6;
+    }
+    .section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    @keyframes fadeSlideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Welcome to DX TRADERS!</h1>
+    <p>
+      We help beginners become pros with expert lessons and free trading tips.<br>
+      Learn the markets, trade wisely, and grow with our community.
+    </p>
+    <a href="https://t.me/DXTradersTG" class="cta-btn">Join Our Free VIP Telegram Group</a>
+  </section>
+
+  <section class="section bg-gray-900 text-white">
+    <h2>About Us</h2>
+    <p>
+      DX Trading Academy is committed to helping beginners master forex and crypto trading. Our platform offers comprehensive tutorials, expert mentorship, and a vibrant community. Whether you’re looking to trade for fun or pursue a career in finance, we’ve got the tools and knowledge you need.
+    </p>
+  </section>
+
+  <section class="section bg-gray-800 text-white">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:DXTraders@hotmail.com" class="text-blue-400 hover:underline">DXTraders@hotmail.com</a></p>
+  </section>
+
+  <footer>
+    <div class="social-icons flex justify-center gap-6">
+      <a href="https://t.me/DXTradersTG" target="_blank" aria-label="Telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#3b82f6" viewBox="0 0 24 24" width="32" height="32">
+          <path d="M22 3L2 10.7l5.5 1.6L20 5l-8.3 9.3L9 20l4.4-3.3 5.6 4.1L22 3z"/>
+        </svg>
+      </a>
+      <a href="https://x.com/exposedcrew?s=21&t=Em7MQNDOIFdIhI_GjrDUbw" target="_blank" aria-label="Twitter / X">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#60a5fa" viewBox="0 0 24 24" width="32" height="32">
+          <path d="M20.6 3H3.4A1.4 1.4 0 0 0 2 4.4v15.2A1.4 1.4 0 0 0 3.4 21h17.2a1.4 1.4 0 0 0 1.4-1.4V4.4A1.4 1.4 0 0 0 20.6 3ZM14.9 12l4.4 6.5h-2.3l-3.2-4.8-3.2 4.8H8.3l4.4-6.5-4.4-6.5h2.3l3.2 4.8 3.2-4.8h2.3L14.9 12Z"/>
+        </svg>
+      </a>
+    </div>
+    <p class="mt-4">&copy; 2025 DX Traders. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Scroll-based animations
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      section.style.opacity = 0;
+      section.style.transform = 'translateY(100px)';
+      section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
